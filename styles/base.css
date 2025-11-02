@@ -222,6 +222,10 @@ button {
     text-wrap: var(--font-color);
 }
 
+main {
+    margin-bottom: 20px;
+}
+
 footer {
     background-color: var(--background-color);
     color: #fff;
