@@ -28,11 +28,11 @@ h1, h2, h3 {
     font-family: "Press Start 2P", cursive;
 }
 
-blink {
+/* blink {
     animation: blink-animation 1s steps(5, start) infinite;
     -webkit-animation: blink-animation 1s steps(5, start) infinite;
     color: var(--primary-color);
-}
+} */
 
 
 .wrapper {
@@ -126,7 +126,7 @@ header .banner-logo {
     width: 100%;
 }
 
-marquee{
+/* marquee{
     font-family: 'Press Start 2P', cursive;
     font-size: 1.2rem;
     color: var(--secondary-color);
@@ -135,9 +135,8 @@ marquee{
     align-items: center;
     background-color: var(--primary-color);
     padding: 2rem;
-}   
+}    */
 
-/* Side Navigation Styles */
 .side-nav {
     background-color: var(--accent-color-2);
     padding: 15px;
