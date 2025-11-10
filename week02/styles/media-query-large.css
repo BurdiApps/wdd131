@@ -1,0 +1,10 @@
+@media (min-width: 500px) {
+    header {
+        background-color: #000;
+        color: #ff0000; /* changed to red for better visibility for media query */
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
