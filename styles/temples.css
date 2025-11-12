@@ -1,0 +1,177 @@
+/* Mobile-first CSS for Temple Album */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #023047;
+    --secondary-color: #219ebc;
+    --accent-color: #22b9ff;
+    --light-bg: #8ecae6;
+    --text-color: #023047;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f5f5f5;
+}
+
+h1,
+h2 {
+    font-family: 'Merriweather', serif;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Hamburger Button */
+#menu-toggle {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    display: block;
+}
+
+#menu-toggle:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    display: none;
+    /* Hidden by default on mobile */
+}
+
+nav.show {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 1rem;
+}
+
+nav li {
+    width: 100%;
+}
+
+nav a {
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid var(--primary-color);
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: var(--accent-color);
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+/* Grid Layout for Figures - Mobile: 1 column */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+main h1 {
+    grid-column: 1;
+}
+
+figure {
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+figure:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+figure:active {
+    background-color: var(--white);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+figure:hover img {
+    opacity: 0.9;
+}
+
+figcaption {
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--primary-color);
+    background-color: var(--light-bg);
+    transition: background-color 0.3s ease;
+}
+
+figure:hover figcaption {
+    background-color: var(--accent-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
