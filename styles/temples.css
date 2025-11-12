@@ -8,9 +8,9 @@
 
 :root {
     --primary-color: #023047;
-    --secondary-color: #219ebc;
-    --accent-color: #22b9ff;
-    --light-bg: #8ecae6;
+    --secondary-color: #353411;
+    --accent-color: #003c6d;
+    --light-bg: #fffaca;
     --text-color: #023047;
     --white: #ffffff;
 }
@@ -154,6 +154,7 @@ figcaption {
 
 figure:hover figcaption {
     background-color: var(--accent-color);
+    color: var(--light-bg)
 }
 
 /* Footer */
