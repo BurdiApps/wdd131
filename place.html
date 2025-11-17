@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Mexico City - the vibrant heart of Mexico with rich culture, history, and incredible cuisine">
+    <meta name="author" content="James Burdick">
+    <title>Mexico City - Heart of Mexico</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Mexico City</h1>
+        <p>Ciudad de México</p>
+    </header>
+
+    <!-- Hero Image with Responsive srcset -->
+    <div class="hero">
+        <picture>
+            <source srcset="images/mexico-hero-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/mexico-hero-medium.webp" media="(min-width: 500px)">
+            <img src="images/mexico-hero-small.webp" alt="Beautiful view of Mexico City" width="1500" height="750">
+        </picture>
+    </div>
+
+    <main>
+        <!-- Introduction Section -->
+        <section class="intro">
+            <h2>Welcome to Mexico City</h2>
+            <p>Mexico City, or Ciudad de México, is one of the largest and most vibrant cities in the world. Built on
+                the ruins of the ancient Aztec capital Tenochtitlan, this sprawling metropolis is a perfect blend of
+                rich history, stunning architecture, world-class museums, and incredible cuisine. From the historic
+                Zócalo to the colorful neighborhoods of Coyoacán and Roma, Mexico City offers endless cultural
+                experiences.</p>
+        </section>
+
+        <!-- Key Information Grid -->
+        <section class="info-grid">
+            <div class="info-card">
+                <h3>Elevation</h3>
+                <p>2,240 meters</p>
+            </div>
+            <div class="info-card">
+                <h3>Population</h3>
+                <p>~22 million</p>
+            </div>
+            <div class="info-card">
+                <h3>Language</h3>
+                <p>Spanish</p>
+            </div>
+            <div class="info-card">
+                <h3>Currency</h3>
+                <p>Mexican Peso (MXN)</p>
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Weather <span class="weather-icon-large">⛅</span></h2>
+            <div class="weather-content">
+                <img src="images/weather-icon.svg" alt="Partly cloudy weather" class="weather-icon-mobile">
+                <div class="weather-details">
+                    <p><strong>Temperature:</strong> <span id="temp">25</span>°C</p>
+                    <p><strong>Conditions:</strong> Partly Cloudy</p>
+                    <p><strong>Wind:</strong> <span id="wind">10</span> km/h</p>
+                    <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities/Attractions Section -->
+        <section class="attractions">
+            <h2>Must-See Attractions</h2>
+            <ul>
+                <li>Zócalo - Historic main square and cultural center</li>
+                <li>Chapultepec Castle - Beautiful hilltop palace and museum</li>
+                <li>Frida Kahlo Museum - Casa Azul in Coyoacán</li>
+                <li>Teotihuacan Pyramids - Ancient Mesoamerican city</li>
+                <li>Xochimilco - Colorful floating gardens and trajineras</li>
+                <li>Palacio de Bellas Artes - Stunning art nouveau theater</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Mexico City Travel Guide | James Burdick</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

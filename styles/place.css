@@ -1,0 +1,248 @@
+/* CSS Variables - Mexico flag colors */
+:root {
+    --primary-green: #006847;
+    --primary-red: #CE1126;
+    --white: #FFFFFF;
+    --text-dark: #222;
+    --text-light: #f8f8f8;
+    --accent-gold: #C8A871;
+    --bg-light: #f4f4f4;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, var(--primary-green) 0%, var(--primary-green) 33%, var(--white) 33%, var(--white) 66%, var(--primary-red) 66%, var(--primary-red) 100%);
+    color: var(--text-dark);
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 6px var(--shadow);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.8);
+    color: var(--text-dark);
+}
+
+header p {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+/* Hero Image */
+.hero {
+    margin: 0;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+section {
+    background: var(--white);
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow);
+}
+
+h2 {
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    border-bottom: 3px solid var(--primary-red);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: var(--primary-red);
+    margin-bottom: 0.5rem;
+}
+
+/* Introduction Section */
+.intro p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Info Grid - Mobile First */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.info-card {
+    background: linear-gradient(135deg, var(--bg-light), var(--white));
+    padding: 1rem;
+    border-left: 4px solid var(--primary-red);
+    text-align: center;
+}
+
+.info-card h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-card p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-green);
+}
+
+/* Weather Section */
+.weather h2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weather-icon-large {
+    display: none;
+    /* Hidden on mobile, shown on wider screens */
+    font-size: 2rem;
+}
+
+.weather-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.weather-icon-mobile {
+    width: 80px;
+    height: 80px;
+}
+
+.weather-details p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.weather-details strong {
+    color: var(--primary-green);
+}
+
+#windchill {
+    font-weight: bold;
+    color: var(--primary-red);
+}
+
+/* Attractions Section */
+.attractions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.attractions li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--bg-light);
+    font-size: 1.1rem;
+}
+
+.attractions li:last-child {
+    border-bottom: none;
+}
+
+.attractions li::before {
+    content: "🌵 ";
+    margin-right: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--text-dark);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Media Query for Wider Screens */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    header p {
+        font-size: 1.3rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    /* Info Grid - 2x2 layout */
+    .info-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Weather Icon Swap */
+    .weather-icon-mobile {
+        display: none;
+        /* Hide SVG on wider screens */
+    }
+
+    .weather-icon-large {
+        display: inline;
+        /* Show emoticon on wider screens */
+    }
+
+    /* Add pseudo-element for additional styling */
+    .weather h2::after {
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 3px;
+        background: var(--accent-gold);
+        margin-left: 1rem;
+        vertical-align: middle;
+    }
+
+    /* Attractions in two columns */
+    .attractions ul {
+        columns: 2;
+        column-gap: 2rem;
+    }
+}
+
+/* Extra Large Screens */
+@media (min-width: 1200px) {
+    .info-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
