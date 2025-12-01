@@ -1,0 +1,40 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Hero section with responsive image */
+.hero {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* Responsive image behavior - maintains aspect ratio */
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Alternative approach using object-fit (uncomment to use) */
+/*
+.hero {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    aspect-ratio: 2 / 1;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+*/

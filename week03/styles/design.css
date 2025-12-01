@@ -1,0 +1,113 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Banner - replaced marquee */
+.banner {
+    background-color: #ffeb3b;
+    color: #333;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Main Grid Layout - two columns */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* H2 spans both columns and is left-aligned (FIXED) */
+main h2 {
+    grid-column: 1 / 3;
+    text-align: left;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+section {
+    padding: 15px;
+}
+
+h3 {
+    color: #444;
+    margin-top: 0;
+}
+
+article p {
+    text-align: justify;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Callout Box - FIXED contrast and padding */
+div.callout {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    border-left: 5px solid #ffeb3b;
+    border-radius: 5px;
+}
+
+div.callout h4 {
+    margin-top: 0;
+    color: #ffeb3b;
+}
+
+div.callout button {
+    background-color: #ffeb3b;
+    color: #222;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+div.callout button:hover {
+    background-color: #fdd835;
+}
+
+/* Footer - left-aligned (FIXED) */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 15px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+footer p {
+    margin: 0;
+}
