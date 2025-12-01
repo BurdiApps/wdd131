@@ -1,0 +1,38 @@
+<svg width="1920" height="600" viewBox="0 0 1920 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky gradient background -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mountain1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A5568;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2D3748;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mountain2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#718096;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A5568;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mountain3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#A0AEC0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#718096;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky background -->
+  <rect width="1920" height="600" fill="url(#skyGradient)"/>
+  
+  <!-- Back mountain layer (lightest) -->
+  <polygon points="200,600 600,150 1000,600" fill="url(#mountain3)" opacity="0.7"/>
+  <polygon points="800,600 1200,200 1600,600" fill="url(#mountain3)" opacity="0.7"/>
+  
+  <!-- Middle mountain layer -->
+  <polygon points="0,600 500,100 900,600" fill="url(#mountain2)" opacity="0.85"/>
+  <polygon points="700,600 1100,180 1500,600" fill="url(#mountain2)" opacity="0.85"/>
+  <polygon points="1300,600 1700,220 2000,600" fill="url(#mountain2)" opacity="0.85"/>
+  
+  <!-- Front mountain layer (darkest) -->
+  <polygon points="-100,600 400,50 800,600" fill="url(#mountain1)"/>
+  <polygon points="600,600 960,120 1320,600" fill="url(#mountain1)"/>
+  <polygon points="1200,600 1600,80 2020,600" fill="url(#mountain1)"/>
+</svg>

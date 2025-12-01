@@ -1,0 +1,315 @@
+/* Site Plan CSS - Using Defined Color Schema and Typography */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Color Schema */
+    --primary-color: #1E3A8A;
+    --secondary-color: #60A5FA;
+    --accent-color1: #F59E0B;
+    --accent-color2: #E83F6F;
+    --text-color: #1F2937;
+    --bg-color: #F3F4F6;
+    --white: #FFFFFF;
+
+    /* Typography */
+    --heading-font: 'Merriweather', serif;
+    --body-font: 'Roboto', sans-serif;
+    --code-font: 'Courier New', monospace;
+}
+
+body {
+    font-family: var(--body-font);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #2563EB 100%);
+    color: var(--white);
+    text-align: center;
+    padding: 3rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+header h2 {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+/* Main Content */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: var(--white);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+h4 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem 0;
+}
+
+h5 {
+    font-family: var(--heading-font);
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin: 1rem 0;
+    font-size: 1.05rem;
+}
+
+ul {
+    margin: 1rem 0 1rem 2rem;
+}
+
+li {
+    margin: 0.5rem 0;
+}
+
+/* Logo Container */
+.logo-container {
+    text-align: center;
+    margin: 0.5rem 0;
+    /* tighter outer spacing */
+    padding: 0;
+    /* remove inner padding */
+    background-color: transparent;
+    /* no box behind logo */
+}
+
+.logo {
+    max-width: 180px;
+    /* more compact logo size */
+    height: auto;
+    display: inline-block;
+}
+
+.domain-note {
+    font-style: italic;
+    color: #6B7280;
+    font-size: 0.95rem;
+}
+
+/* Scenarios */
+.scenario {
+    background-color: var(--bg-color);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--accent-color1);
+    border-radius: 4px;
+}
+
+.scenario strong {
+    color: var(--primary-color);
+}
+
+/* Color Palette */
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.color-box {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--bg-color);
+}
+
+.color-swatch {
+    height: 100px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 2px solid #E5E7EB;
+}
+
+.primary .color-swatch {
+    background-color: #1E3A8A;
+}
+
+.secondary .color-swatch {
+    background-color: #60A5FA;
+}
+
+.accent-1 .color-swatch {
+    background-color: #F59E0B;
+}
+
+.accent-2 .color-swatch {
+    background-color: #E83F6F;
+}
+
+.neutral-dark .color-swatch {
+    background-color: #1F2937;
+}
+
+.neutral-light .color-swatch {
+    background-color: #F3F4F6;
+}
+
+.hex {
+    font-family: var(--code-font);
+    font-weight: bold;
+    margin: 0.5rem 0;
+    color: var(--text-color);
+}
+
+.color-box p:last-child {
+    font-size: 0.9rem;
+    color: #6B7280;
+}
+
+/* Typography Examples */
+.font-example {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+}
+
+.font-heading-example {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.font-body-example {
+    font-family: var(--body-font);
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.font-code-example {
+    font-family: var(--code-font);
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+.font-details {
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.sample-text {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--white);
+    border-left: 3px solid var(--secondary-color);
+    font-size: 1.05rem;
+}
+
+.sample-code {
+    background-color: #1F2937;
+    color: #10B981;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-family: var(--code-font);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Wireframes */
+.wireframe-section {
+    margin: 2rem 0;
+}
+
+.wireframe-img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #D1D5DB;
+    border-radius: 8px;
+    display: block;
+    margin: 1rem auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wireframe-img.mobile {
+    max-width: 500px;
+}
+
+.wireframe-img.desktop {
+    max-width: 100%;
+}
+
+.wireframe-notes {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #6B7280;
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .color-palette {
+        grid-template-columns: 1fr;
+    }
+
+    .wf-content-grid {
+        grid-template-columns: 1fr;
+    }
+}
