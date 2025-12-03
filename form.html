@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How Are We Doing? | WDD 131</title>
-    <meta name="description" content="Submit a product review for our quality products">
+    <meta name="description"
+        content="Share your experience with English Verb Learner. Submit a product review and help us improve our language learning tools.">
     <meta name="author" content="James Burdick">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,38 +25,37 @@
             <fieldset>
                 <legend>Product Information</legend>
 
-                <label for="product-name">Product Name: <span class="required" aria-label="required">*</span></label>
+                <label for="product-name">Product Name: <abbr class="required" title="required">*</abbr></label>
                 <select id="product-name" name="product-name" required>
                     <option value="" disabled selected>Select a Product...</option>
                     <!-- Options will be populated by JavaScript -->
                 </select>
 
-                <label for="overall-rating">Overall Rating: <span class="required"
-                    aria-label="required">*</span></label>
+                <p class="field-label">Overall Rating: <abbr class="required" title="required">*</abbr></p>
                 <div class="rating-options">
-                    <label class="radio-label">
+                    <label class="radio-label" for="rating-1">
                         <input type="radio" id="rating-1" name="overall-rating" value="1" required>
                         <span>★☆☆☆☆</span>
                     </label>
-                    <label class="radio-label">
-                        <input type="radio" id="rating-2" name="overall-rating" value="2">
+                    <label class="radio-label" for="rating-2">
+                        <input type="radio" id="rating-2" name="overall-rating" value="2" required>
                         <span>★★☆☆☆</span>
                     </label>
-                    <label class="radio-label">
-                        <input type="radio" id="rating-3" name="overall-rating" value="3">
+                    <label class="radio-label" for="rating-3">
+                        <input type="radio" id="rating-3" name="overall-rating" value="3" required>
                         <span>★★★☆☆</span>
                     </label>
-                    <label class="radio-label">
-                        <input type="radio" id="rating-4" name="overall-rating" value="4">
+                    <label class="radio-label" for="rating-4">
+                        <input type="radio" id="rating-4" name="overall-rating" value="4" required>
                         <span>★★★★☆</span>
                     </label>
-                    <label class="radio-label">
-                        <input type="radio" id="rating-5" name="overall-rating" value="5">
+                    <label class="radio-label" for="rating-5">
+                        <input type="radio" id="rating-5" name="overall-rating" value="5" required>
                         <span>★★★★★</span>
                     </label>
                 </div>
 
-                <label for="review-date">Date of Review: <span class="required" aria-label="required">*</span></label>
+                <label for="review-date">Date of Review: <abbr class="required" title="required">*</abbr></label>
                 <input type="date" id="review-date" name="review-date" required>
             </fieldset>
 
@@ -64,19 +64,19 @@
 
                 <p class="field-description">Which features do you use? (Check all that apply)</p>
                 <div class="checkbox-group">
-                    <label class="checkbox-label">
+                    <label class="checkbox-label" for="feature-audio">
                         <input type="checkbox" id="feature-audio" name="features" value="audio">
                         <span>Audio Pronunciation</span>
                     </label>
-                    <label class="checkbox-label">
+                    <label class="checkbox-label" for="feature-progress">
                         <input type="checkbox" id="feature-progress" name="features" value="progress">
                         <span>Progress Tracking</span>
                     </label>
-                    <label class="checkbox-label">
+                    <label class="checkbox-label" for="feature-bookmarks">
                         <input type="checkbox" id="feature-bookmarks" name="features" value="bookmarks">
                         <span>Bookmarks/Favorites</span>
                     </label>
-                    <label class="checkbox-label">
+                    <label class="checkbox-label" for="feature-streaks">
                         <input type="checkbox" id="feature-streaks" name="features" value="streaks">
                         <span>Study Streaks</span>
                     </label>

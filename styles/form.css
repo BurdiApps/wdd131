@@ -81,7 +81,8 @@ legend {
 }
 
 /* Form Labels */
-label {
+label,
+.field-label {
     display: block;
     font-weight: 500;
     color: #374151;
