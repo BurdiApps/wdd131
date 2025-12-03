@@ -1,0 +1,225 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #1F2937;
+    background: linear-gradient(135deg, #90e855 0%, #3c7b49 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Success Card */
+.success-card {
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+/* Success Icon */
+.success-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Headings and Text */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 1rem;
+}
+
+.message {
+    font-size: 1.1rem;
+    color: #6B7280;
+    margin-bottom: 2rem;
+}
+
+/* Review Count Section */
+.review-count {
+    background: linear-gradient(135deg, #e8f5e0 0%, #d4edd1 100%);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.review-count p:first-child {
+    font-size: 1rem;
+    color: #4B5563;
+    margin-bottom: 0.5rem;
+}
+
+.count-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0d640c;
+    margin: 0;
+}
+
+/* Action Buttons */
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #90e855 0%, #3c7b49 100%);
+    color: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+    background: #FFFFFF;
+    color: #0d640c;
+    border: 2px solid #0d640c;
+}
+
+.btn-secondary:hover {
+    background: #e8f5e0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .success-card {
+        padding: 4rem 3rem;
+    }
+
+    .actions {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        min-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .success-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+
+    .count-number {
+        font-size: 2.5rem;
+    }
+
+    .success-card {
+        padding: 2rem 1.5rem;
+    }
+}
+
+/* Ultra-small devices */
+@media (max-width: 360px) {
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .success-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 1.8rem;
+    }
+
+    .message {
+        font-size: 1rem;
+    }
+
+    .review-count {
+        padding: 1rem;
+        margin: 1.5rem 0;
+    }
+
+    .count-number {
+        font-size: 2.2rem;
+    }
+
+    .success-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 0.85rem 1rem;
+        font-size: 0.95rem;
+    }
+}

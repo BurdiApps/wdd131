@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book of Mormon Favorites | WDD 131</title>
+    <meta name="description" content="Enter and display favorite Book of Mormon chapters." />
+    <meta name="author" content="James Burdick" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/bom.css" />
+</head>
+
+<body>
+    <header>
+        <h1>📖 Book of Mormon - Top 10</h1>
+    </header>
+    <main>
+        <div class="panel" aria-live="polite" aria-label="Top 10 Book of Mormon Chapters">
+            <form id="chapter-form" autocomplete="off" aria-label="Add favorite chapter" onsubmit="return false;">
+                <label for="chapter-input" class="field-label">Enter Book and Chapter:</label>
+                <input id="chapter-input" name="chapter" type="text" placeholder="Alma 5" aria-required="true" />
+                <button id="add-button" type="button" aria-label="Add chapter">Add Chapter</button>
+            </form>
+            <section>
+                <ul id="chapter-list" aria-live="polite" aria-label="Favorite chapters list"></ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> James Burdick</p>
+    </footer>
+    <script src="scripts/bom.js" defer></script>
+</body>
+
+</html>

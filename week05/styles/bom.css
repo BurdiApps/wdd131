@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 2rem auto;
+    max-width: 700px;
+    padding: 0 1rem;
+    line-height: 1.5;
+    background: #fff;
+}
+
+header {
+    text-align: left;
+    margin: 0 auto 1.25rem;
+    max-width: 460px;
+}
+
+header h1 {
+    margin: 0 0 .75rem;
+    font-size: 1.9rem;
+}
+
+.hint {
+    font-size: .85rem;
+    color: #555;
+}
+
+/* Panel container mimicking screenshot */
+.panel {
+    background: #e3e3e3;
+    border: 1px solid #bcbcbc;
+    padding: 1.2rem 1.25rem 1.5rem;
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    margin-bottom: 1.25rem;
+}
+
+.field-label {
+    font-weight: 700;
+    font-size: .95rem;
+}
+
+input {
+    width: 100%;
+    padding: .6rem .75rem;
+    border: 1px solid #333;
+    background: #f9f9f9;
+    border-radius: 0;
+    font-size: 1rem;
+}
+
+button {
+    padding: .6rem 1rem;
+    background: #dcdcdc;
+    color: #111;
+    border: 1px solid #999;
+    border-radius: 0;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background: #cfcfcf;
+}
+
+section h2 {
+    margin-bottom: .5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .55rem .25rem .55rem .25rem;
+    margin-bottom: .65rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.delete-button {
+    background: #f2f2f2;
+    border: 1px solid #999;
+    font-size: .95rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: .35rem .55rem;
+    border-radius: 4px;
+    margin-right: 2rem;
+    width: auto;
+}
+
+.delete-button:hover {
+    background: #e0e0e0;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: .85rem;
+    color: #555;
+}
