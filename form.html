@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <h1><strong>¯\_(ツ)_/¯</strong> How did we do? </h1>
+        <h1><strong>¯\_(ツ)_/¯</strong><br>How did we do?</h1>
         <p>What do you think of English Verb Learner?</p>
     </header>
 
@@ -31,7 +31,7 @@
                 </select>
 
                 <label for="overall-rating">Overall Rating: <span class="required"
-                        aria-label="required">*</span></label>
+                    aria-label="required">*</span></label>
                 <div class="rating-options">
                     <label class="radio-label">
                         <input type="radio" id="rating-1" name="overall-rating" value="1" required>
@@ -88,10 +88,10 @@
 
                 <label for="written-review">Written Review:</label>
                 <textarea id="written-review" name="written-review" rows="5"
-                    placeholder="Share your thoughts about this product..."></textarea>
+                    placeholder="Share your thoughts about this product..." maxlength="1000"></textarea>
 
                 <label for="user-name">Your Name:</label>
-                <input type="text" id="user-name" name="user-name" placeholder="Enter your name">
+                <input type="text" id="user-name" name="user-name" placeholder="Enter your name" autocomplete="name">
             </fieldset>
 
             <div class="form-actions">
