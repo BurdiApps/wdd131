@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Reviews | Math Mountain</title>
+    <meta name="description"
+        content="Honest reviews of math textbooks and workbooks. Filter by subject to find the best study materials for Pre-Calculus, Calculus, and more.">
+    <meta name="author" content="James Burdick">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="images/math-mountain-logo.svg" alt="Math Mountain Logo" class="logo" loading="lazy">
+                    <span class="brand-name">Math Mountain</span>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="notes.html" class="nav-link">Notes</a></li>
+                    <li><a href="books.html" class="nav-link active">Books</a></li>
+                    <li><a href="programming.html" class="nav-link">Programming</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Book Reviews</h1>
+                <p class="page-subtitle">Honest reviews from an adult learner rebuilding math foundations</p>
+            </div>
+        </section>
+
+        <!-- Filter Controls -->
+        <section class="filter-section">
+            <div class="container">
+                <div class="filter-controls">
+                    <label for="book-filter" class="filter-label">Filter by Subject:</label>
+                    <select id="book-filter" class="subject-filter">
+                        <option value="all">All Books</option>
+                        <option value="pre-calc">Pre-Calculus</option>
+                        <option value="calc">Calculus</option>
+                        <option value="algebra">Algebra</option>
+                        <option value="workbook">Workbooks</option>
+                    </select>
+                </div>
+                <p id="book-count" class="book-count"></p>
+            </div>
+        </section>
+
+        <!-- Books Grid -->
+        <section class="books-section">
+            <div class="container">
+                <div id="books-grid" class="books-grid">
+                    <!-- Books will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About Math Mountain</h4>
+                <p>A free learning resource documenting one person's journey from math struggles to mathematical
+                    confidence.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="programming.html">Programming</a></li>
+                    <li><a href="citations.html">Citations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <p>Have questions? <a href="mailto:james@burdiapps.com">Email me</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentyear"></span> James Burdick | Math Mountain | BurdiApps</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/books.js"></script>
+</body>
+
+</html>

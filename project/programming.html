@@ -1,0 +1,92 @@
+<!-- this is what programming.html will look like but with julia programing contnet-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Notes | Math Mountain</title>
+    <meta name="description"
+        content="Browse my math lesson notes from Professor Leonard. Upload your own notes and photos to share with the community.">
+    <meta name="author" content="James Burdick">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="images/math-mountain-logo.svg" alt="Math Mountain Logo" class="logo" loading="lazy">
+                    <span class="brand-name">Math Mountain</span>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="notes.html" class="nav-link active">Notes</a></li>
+                    <li><a href="books.html" class="nav-link">Books</a></li>
+                    <li><a href="programming.html" class="nav-link">Programming</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Programming Lessons</h1>
+                <p class="page-subtitle">Explore programming concepts and languages</p>
+            </div>
+        </section>
+        <!-- Programming Gallery -->
+        <section class="notes-section">
+            <div class="container">
+                <div id="programming-gallery" class="notes-gallery">
+                    <!-- Julia Card will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About Math Mountain</h4>
+                <p>A free learning resource documenting one person's journey from math struggles to mathematical
+                    confidence.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="programming.html">Programming</a></li>
+                    <li><a href="citations.html">Citations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <p>Have questions? <a href="mailto:james@burdiapps.com">Email me</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentyear"></span> James Burdick | Math Mountain | BurdiApps</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/notes.js"></script>
+    <script src="scripts/programming.js"></script>
+</body>
+
+</html>

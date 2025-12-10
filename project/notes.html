@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Notes | Math Mountain</title>
+    <meta name="description"
+        content="Browse my math lesson notes from Professor Leonard. Upload your own notes and photos to share with the community.">
+    <meta name="author" content="James Burdick">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="images/math-mountain-logo.svg" alt="Math Mountain Logo" class="logo" loading="lazy">
+                    <span class="brand-name">Math Mountain</span>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="notes.html" class="nav-link active">Notes</a></li>
+                    <li><a href="books.html" class="nav-link">Books</a></li>
+                    <li><a href="programming.html" class="nav-link">Programming</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Lesson Notes</h1>
+                <p class="page-subtitle">Organized notes from my math journey with photos and examples</p>
+            </div>
+        </section>
+        <!-- Subject Filter -->
+        <section class="filter-section">
+            <div class="container">
+                <label for="subject-filter" class="filter-label">Filter by Subject:</label>
+                <select id="subject-filter" class="subject-filter">
+                    <option value="all">All Subjects</option>
+                    <option value="pre-calc">Pre-Calculus</option>
+                    <option value="calc1">Calculus 1</option>
+                    <option value="calc2">Calculus 2</option>
+                    <option value="algebra">Algebra Review</option>
+                </select>
+            </div>
+        </section>
+        <!-- Notes Gallery -->
+        <section class="notes-section">
+            <div class="container">
+                <div id="notes-gallery" class="notes-gallery">
+                    <!-- Notes will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+        <!-- Add Note Form -->
+        <section class="add-note-section">
+            <div class="container">
+                <h2>Add Your Own Lesson</h2>
+                <p style="text-align:center;">Share your handwritten notes or problem solutions with the community!</p>
+                <form id="add-note-form" class="add-note-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="note-title">Note Title <abbr class="required" title="required">*</abbr></label>
+                            <input type="text" id="note-title" name="title" required placeholder="e.g., Limits - Day 1">
+                        </div>
+                        <div class="form-group">
+                            <label for="note-subject">Subject <abbr class="required" title="required">*</abbr></label>
+                            <select id="note-subject" name="subject" required>
+                                <option value="">Select subject...</option>
+                                <option value="pre-calc">Pre-Calculus</option>
+                                <option value="calc1">Calculus 1</option>
+                                <option value="calc2">Calculus 2</option>
+                                <option value="algebra">Algebra Review</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="note-description">Description</label>
+                        <textarea id="note-description" name="description" rows="3"
+                            placeholder="Brief summary of what this note covers..." maxlength="500"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="note-photo">Photo URL <abbr class="required" title="required">*</abbr></label>
+                        <input type="url" id="note-photo" name="photo" required
+                            placeholder="https://example.com/your-note-photo.jpg">
+                        <small>Paste a link to your hosted note image</small>
+                    </div>
+                    <button type="submit" class="submit-button">Add Note</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About Math Mountain</h4>
+                <p>A free learning resource documenting one person's journey from math struggles to mathematical
+                    confidence.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="programming.html">Programming</a></li>
+                    <li><a href="citations.html">Citations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <p>Have questions? <a href="mailto:james@burdiapps.com">Email me</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentyear"></span> James Burdick | Math Mountain | BurdiApps</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/notes.js"></script>
+</body>
+
+</html>

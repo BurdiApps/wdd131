@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Mountain | Learn Math From Struggle to Success</title>
+    <meta name="description"
+        content="Join my journey from struggling with math in high school to mastering calculus. Free lessons, notes, book reviews, and programming examples.">
+    <meta name="author" content="James Burdick">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="images/math-mountain-logo.svg" alt="Math Mountain Logo" class="logo" loading="lazy">
+                    <span class="brand-name">Math Mountain</span>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="notes.html" class="nav-link">Notes</a></li>
+                    <li><a href="books.html" class="nav-link">Books</a></li>
+                    <li><a href="programming.html" class="nav-link">Programming</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Math Mountain</h1>
+                <p class="hero-subtitle">From Struggling Student to Math Enthusiast</p>
+                <p class="hero-description">
+                    Join me as I climb the mountain of mathematics—documenting every lesson, sharing honest book
+                    reviews, and proving it's never too late to master what once seemed impossible.
+                </p>
+                <a href="notes.html" class="cta-button">Start Learning</a>
+            </div>
+        </section>
+
+        <!-- Journey Stats -->
+        <section class="stats-section">
+            <div class="container">
+                <h2>My Learning Journey</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number" id="lessons-completed">0</span>
+                        <span class="stat-label">Lessons</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="notes-taken">0</span>
+                        <span class="stat-label">Notes Taken</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="books-reviewed">0</span>
+                        <span class="stat-label">Books Reviewed</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section class="features-section">
+            <div class="container">
+                <h2>What You'll Find Here</h2>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">📝</div>
+                        <h3>Lesson Notes</h3>
+                        <p>Detailed notes from Professor Leonard and Khan Academy lessons, organized by topic with
+                            photos of handwritten work.</p>
+                        <a href="notes.html" class="feature-link">View Notes →</a>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h3>Book Reviews</h3>
+                        <p>Honest reviews of textbooks and workbooks I use daily. Filter by subject to find the perfect
+                            study materials.</p>
+                        <a href="books.html" class="feature-link">Browse Books →</a>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">💻</div>
+                        <h3>Math Through Code</h3>
+                        <p>See how mathematical concepts apply to programming with practical Python and JavaScript
+                            examples.</p>
+                        <a href="programming.html" class="feature-link">Explore Code →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup Form -->
+        <section class="newsletter-section">
+            <div class="container">
+                <h2>Join the Climb</h2>
+                <p>Get weekly updates on new lessons, book reviews, and programming examples.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <div class="form-group">
+                        <label for="newsletter-email">Email Address <abbr class="required"
+                                title="required">*</abbr></label>
+                        <input type="email" id="newsletter-email" name="email" required
+                            placeholder="your.email@example.com" autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">What interests you most?</label>
+                        <select id="interest" name="interest">
+                            <option value="all">All Topics</option>
+                            <option value="pre-calc">Pre-Calculus</option>
+                            <option value="calc">Calculus</option>
+                            <option value="programming">Programming</option>
+                            <option value="books">Book Reviews</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-button">Subscribe</button>
+                </form>
+                <p id="form-message" class="form-message"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About Math Mountain</h4>
+                <p>A free learning resource documenting one person's journey from math struggles to mathematical
+                    confidence.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="programming.html">Programming</a></li>
+                    <li><a href="citations.html">Citations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <p>Have questions? <a href="mailto:james@burdiapps.com">Email me</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentyear"></span> James Burdick | Math Mountain | BurdiApps</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
